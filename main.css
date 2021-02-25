@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  .dropdown,
+  .flyout {
+    position: relative;
+  }
+  .dropdown:after {
+    content: "\25BC";
+    font-size: .5em;
+    display: block;
+    position: absolute;
+    top: 38%;
+    right: 12%;
+  }
+  .drop-nav, 
+  .flyout-nav {
+    position: absolute;
+    display: none;
+  }
+  .drop-nav li {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+  .dropdown:hover > .drop-nav,
+  .flyout:hover > .flyout-nav{
+    display : block;
+  }
+
+  .flyout-nav {
+    left: 100%;
+    top: 0;
+
+  }
+  .flyout:hover a,
+  .flyout-nav {
+    background: gray;
+  }
